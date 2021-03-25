@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const authy = require('authy')('AUTHY_TOKEN_KEY');
-const twilioClient = require('twilio')('TWILIO_SSID', 'TWILIO_AUTH_TOKEN');
+const authy = require('authy')('S7JKe60Bt3Ucc5pJjkRJUCl86etpOsod');
+const twilioClient = require('twilio')('AC3112c59714c031125cfa69ac02af0cfc', 'dff4cda1cb28f4b36ea56130fe5bcb30');
 
 // For hashing password
 const SALT_WORK_FACTOR = 10;

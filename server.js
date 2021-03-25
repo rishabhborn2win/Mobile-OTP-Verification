@@ -3,11 +3,12 @@ const app = express();
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
-const mongoose = require('mongoose');
 const path = require('path');
+const connectDB = require("./config/db");
+
 
 // Connecting to the local database
-mongoose.connect('MONGODB_URI');
+connectDB();
 
 //Set view engine
 app.set('view engine', 'ejs');
